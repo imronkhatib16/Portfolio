@@ -1,0 +1,12 @@
+body {
+	font-family: 'Merriweather', serif;
+}
+
+#headerWrapper {
+
+	display:grid;
+	grid-template-columns: fit-content(20%) auto;
+}
+
+
+
