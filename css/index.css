@@ -1,5 +1,5 @@
 body{
-
+	font-family:'Montserrat', sans-serif,'Merriweather', serif;
 	background-color:#f9f9f9;
 	background-image:url('/../img/background.svg');
 	background-repeat:none;
@@ -53,11 +53,10 @@ body{
 	color:#fff;
 }
 
+/*End Navbar*/
 
 
-
-
-/*#hero {
+#hero {
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
@@ -66,4 +65,12 @@ body{
 #heroImage {
 	display:block;
 	height:500px;
-}*/
+}
+
+#heroContent{
+	margin-left:100px;
+}
+
+#heroContent h1 {
+	color:#9A5293;
+}
