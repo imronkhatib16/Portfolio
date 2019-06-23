@@ -30,7 +30,7 @@ body{
 
 
 .link a:hover{
-	color:#9A5293;
+	color:#514B6F;
 }
 
 #headerButton {
@@ -65,6 +65,8 @@ body{
 #heroImage {
 	display:block;
 	height:500px;
+	margin-bottom:-50px; /*This should be fixed in the future and is a temporary fix 
+	to allow hero image to sit atop of the workflow section*/
 }
 
 #heroContent{
@@ -72,5 +74,45 @@ body{
 }
 
 #heroContent h1 {
-	color:#9A5293;
+	color:#514B6F;
+}
+
+
+/*End Hero */
+
+#workFlow {
+
+	z-index:-1;
+	background-color:#534D72;
+	height:500px;
+	color:#fff;
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+
+#workFlowHeader {
+	text-align:center;
+	margin:2% 15%;
+}
+
+
+#cardContainer{
+	border:2px solid #fff;
+	border-radius:20px;
+	box-shadow:5px 5px lightgrey;
+	width:95%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	background-color:#fff;
+}
+
+.card{
+	text-align:center;
+	margin:10px;
+	padding:50px 10px;
+	border-radius:20px;
+	flex-basis:30%;
+	background-color:#534D72;
 }
