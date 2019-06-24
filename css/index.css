@@ -1,7 +1,10 @@
+html {
+	scroll-behavior:smooth;
+}
 body{
 	font-family:'Montserrat', sans-serif,'Merriweather', serif;
 	background-color:#f9f9f9;
-	background-image:url('/../img/background.svg');
+	background-image:url('/../img/background.svg'), url('/../img/background-two.svg');
 	background-repeat:none;
 	overflow:none;
 }
@@ -78,7 +81,7 @@ body{
 }
 
 
-/*End Hero */
+/*End Hero Section*/
 
 #workFlow {
 
@@ -96,23 +99,71 @@ body{
 	margin:2% 15%;
 }
 
-
-#cardContainer{
+.card-container-light{
 	border:2px solid #fff;
 	border-radius:20px;
 	box-shadow:5px 5px lightgrey;
-	width:95%;
+	width:80%;
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:space-around;
 	background-color:#fff;
 }
 
-.card{
+.card-light{
 	text-align:center;
-	margin:10px;
-	padding:50px 10px;
+	padding: 10px;
+	margin:20px 10px;
 	border-radius:20px;
-	flex-basis:30%;
+	flex-basis:26.6%;
 	background-color:#534D72;
+	color:#fff;
 }
+
+/*There is an issue with the text being centered within the card, unknown cause at this time.*/
+
+/*End of Workflow Section*/
+
+
+#services {
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	justify-content:space-between;
+	margin-top:200px;
+}
+
+.card-container-dark{
+	border:2px solid #374955;
+	border-radius:20px;
+	box-shadow:5px 5px lightgrey;
+	width:80%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	background-color:#374955;
+}
+
+.card-dark{
+	text-align:center;
+	padding: 10px;
+	margin:20px 10px;
+	border-radius:20px;
+	flex-basis:26.6%;
+	background-color:#fff;
+	color:#534D72;
+}
+
+
+#services img{
+	z-index:1;
+	height:500px;
+	margin-bottom:-30px;
+}
+
+/*End Services Section*/
+
+
+
+
+
