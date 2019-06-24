@@ -9,7 +9,7 @@ body{
 	overflow:none;
 }
 
-#headerWrapper {
+#headerContainer {
 	display:flex;
 	align-items:center;
 	justify-content:flex-end;
@@ -40,7 +40,7 @@ body{
 	margin-right:20px;
 }
 
-.btn-small {
+.btn-small-dark {
 	cursor:pointer;
 	background-color:transparent;
 	border:1.5px solid #9A5293;
@@ -51,9 +51,27 @@ body{
 }
 
 
-.btn-small:hover {
+.btn-small-dark:hover {
 	background-color:#9A5293;
 	color:#fff;
+}
+
+
+
+.btn-small-light {
+	cursor:pointer;
+	background-color:transparent;
+	border:1.5px solid #fff;
+	border-radius:100px;
+	padding:8px 25px;
+	color:#fff;
+	transition: all 0.2s 0 ease; 
+}
+
+
+.btn-small-light:hover {
+	background-color:#fff;
+	color:#9A5293;
 }
 
 /*End Navbar*/
@@ -163,7 +181,55 @@ body{
 
 /*End Services Section*/
 
+#footerContainer {
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:center;
 
+}
+
+#footerTop {
+	z-index:1;
+	margin-top:50px;
+	border-radius:20px;
+	background-color:#374955;
+	text-align:center;
+	color:#fff;
+	padding:5%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	align-self: center;
+	width:80%;
+	
+}
+
+#footerTop a{
+	color:#fff;
+	text-decoration:none;
+}
+
+#footerBottom {
+	margin-top:-150px;
+	z-index:-1;
+	height:250px;
+	background-color:#534D72;
+
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#footerBottom a {
+	cursor:pointer; /*not functioning*/
+	color:#fff;
+	font-size:2em;
+
+	padding:10px 5px;
+	margin-top:auto;
+	align-self:center;
+}
 
 
 
