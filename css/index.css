@@ -10,6 +10,7 @@ body{
 }
 
 #headerContainer {
+	/*position:fixed;*/
 	display:flex;
 	align-items:center;
 	justify-content:flex-end;
@@ -120,7 +121,7 @@ body{
 .card-container-light{
 	border:2px solid #fff;
 	border-radius:20px;
-	box-shadow:5px 5px lightgrey;
+	box-shadow:3px 3px lightgrey;
 	width:80%;
 	display:flex;
 	flex-flow:row wrap;
@@ -128,7 +129,7 @@ body{
 	background-color:#fff;
 }
 
-.card-light{
+.card-dark{
 	text-align:center;
 	padding: 10px;
 	margin:20px 10px;
@@ -144,6 +145,8 @@ body{
 
 
 #services {
+	background-color:#f9f9f9;
+	padding:50px;
 	display:flex;
 	flex-flow:column wrap;
 	align-items:center;
@@ -154,7 +157,7 @@ body{
 .card-container-dark{
 	border:2px solid #374955;
 	border-radius:20px;
-	box-shadow:5px 5px lightgrey;
+	box-shadow:3px 3px lightgrey;
 	width:80%;
 	display:flex;
 	flex-flow:row wrap;
@@ -162,7 +165,7 @@ body{
 	background-color:#374955;
 }
 
-.card-dark{
+.card-light{
 	text-align:center;
 	padding: 10px;
 	margin:20px 10px;
@@ -181,6 +184,32 @@ body{
 
 /*End Services Section*/
 
+
+
+#mentor {
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:center;
+	justify-content:space-between;
+}
+
+#mentorImage {
+	display:block;
+	height:500px;
+}
+
+#mentorContent{
+	margin-right:100px;
+	text-align:left;
+}
+
+#mentorContent h1 {
+	color:#514B6F;
+}
+
+/*End Mentor Section*/
+
+
 #footerContainer {
 	display:flex;
 	flex-flow:column wrap;
@@ -189,6 +218,9 @@ body{
 }
 
 #footerTop {
+	background-image:url('/../img/background-texture.png');
+	background-repeat:none;
+	background-size:200px;
 	z-index:1;
 	margin-top:50px;
 	border-radius:20px;
@@ -196,6 +228,7 @@ body{
 	text-align:center;
 	color:#fff;
 	padding:5%;
+
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
@@ -231,5 +264,5 @@ body{
 	align-self:center;
 }
 
-
+/*End Footer Section*/
 
