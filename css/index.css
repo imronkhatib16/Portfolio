@@ -16,6 +16,80 @@ body{
 	justify-content:flex-end;
 }
 
+.modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	overflow:auto;
+
+	background-color:rgba(0,0,0, 0.5);
+}
+
+.modal-content {
+	background-color:#fff;
+	border-radius:20px;
+	display:flex;
+	width:50%;
+	margin:20% auto;
+	padding:5%;
+	justify-content:space-between;
+	align-items:center;
+
+	animation-name:openModal;
+	animation-duration:.5s;
+}
+
+#closeBtn {
+	color:#707070;
+	float:right;
+	font-size:30px;
+}
+
+#closeBtn:hover, #closeBtn:focus {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+@keyframes openModal {
+	from{ opacity: 0 }
+	to{ opacity: 1 }
+}	
+
+
+/*End ReUsable CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*fixed-bar bar css*/
 
 .fixed-bar {
@@ -58,7 +132,7 @@ body{
 	color:#514B6F;
 }
 
-#headerButton {
+#modalBtn {
 	margin-right:20px;
 }
 
@@ -114,6 +188,7 @@ body{
 
 #heroContent{
 	margin-left:100px;
+	flex-basis:50%;
 }
 
 #heroContent h1 {
@@ -212,16 +287,18 @@ body{
 	flex-flow:row nowrap;
 	align-items:center;
 	justify-content:space-between;
+	width:90%;
 }
 
 #mentorImage {
 	display:block;
 	height:500px;
+	margin-left:100px;
 }
 
 #mentorContent{
-	margin-right:100px;
 	text-align:left;
+	flex-basis:45%;
 }
 
 #mentorContent h1 {
